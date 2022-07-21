@@ -1,4 +1,4 @@
-# Compania Taxi Pugacho
+# APP LICORERIA
 # Codignaiter 4.1
 ## Setup
 
@@ -8,5 +8,5 @@ php spark serve
 
 php spark migrate
 
-php spark db:seed TestSeeder
+
 
