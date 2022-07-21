@@ -1,0 +1,108 @@
+body {
+    background-image: url(../image/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size:100% 100%; 
+    background-attachment: fixed;
+}
+header h1{
+    /* 
+        text-align: center;
+        padding: 2rem;
+        color: white;	
+        font-family: 'IM Fell Double Pica', serif;
+        font-size: 4rem;        
+    */
+    text-align: center;
+    padding: 2rem;
+    color: white;	
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.card{
+    width: 310px;
+    height: 410px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-left: 535px;
+    opacity: 0.9;
+    border-radius: 28px;
+}
+.card h1 {
+    margin: 0;
+    padding: 0 0 40px;
+    text-align: center;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 32px;
+}
+.card label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+.card input{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.card button{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.card input[type="text"], .card input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.card input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #757A80;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.card button[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #757A80;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.card input[type="submit"]:hover {
+    cursor: pointer;
+    background: #45FD05;
+    color: #000;
+    opacity: 0.8;
+}
+.card button[type="button"]:hover {
+    cursor: pointer;
+    background: #45FD05;
+    color: #000;
+    opacity: 0.8;
+}
+
+
+.pie_pagina{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 30px;
+}
