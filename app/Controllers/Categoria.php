@@ -115,6 +115,19 @@ class Categoria extends BaseController
         ]);
     }
 
+    public function deleteCategoriaApi($id)
+    {
+
+        $aux=[
+            'estado'=>0
+        ];
+      
+        $modelCategoria = new Categorias();
+        $query = $modelCategoria->updateCategoria($aux, $id);
+        return $this->getRespose([
+            'success' => "Eliminado"
+        ]);
+    }
 
     public function selectCategoriasEstado1()
     {
