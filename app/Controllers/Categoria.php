@@ -24,6 +24,15 @@ class Categoria extends BaseController
         ]);
     }
 
+    public function selectCategoriasApi()
+    {
+        $modelCategoria = new Categorias();
+        $query = $modelCategoria->selectCategorias();
+
+        echo  json_encode($query);
+       
+    }
+
     public function selectCategoriaId($id)
     {
         $modelCategoria = new Categorias();

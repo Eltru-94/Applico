@@ -51,6 +51,7 @@ $routes->get('/Productos/selectExel', 'Producto::selectExel');
     /** Categoria */
 
     $routes->get('/Categorias', 'Categoria::index');
+    $routes->get('/Categorias/selectApi', 'Categoria::selectCategoriasApi');
     $routes->get('/Categorias/select', 'Categoria::selectCategorias');
     $routes->get('/Categorias/update/(:num)', 'Categoria::selectCategoriaId/$1');
     $routes->post('/Categorias/store', 'Categoria::store');
