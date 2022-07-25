@@ -29,6 +29,16 @@ class Categorias extends Model
         return $query->getResultArray();
     }
 
+    
+    public function selectCategoriasApi()
+    {
+        $builder = $this->db->table('categorias');
+        $builder->where('estado',1);
+        $query = $builder->get();
+        return $query->getResultArray();
+    }
+
+
     public function selectCategoriaId($id_categoria)
     {
         $builder = $this->db->table('categorias');

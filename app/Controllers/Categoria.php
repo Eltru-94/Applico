@@ -27,7 +27,7 @@ class Categoria extends BaseController
     public function selectCategoriasApi()
     {
         $modelCategoria = new Categorias();
-        $query = $modelCategoria->selectCategorias();
+        $query = $modelCategoria->selectCategoriasApi();
 
         echo  json_encode($query);
        
@@ -40,6 +40,14 @@ class Categoria extends BaseController
         return $this->getRespose([
             'categorias' => $query
         ]);
+    }
+
+
+    public function selectCategoriaIdApi($id)
+    {
+        $modelCategoria = new Categorias();
+        $query = $modelCategoria->selectCategoriaId($id);
+        echo  json_encode($query);
     }
 
     /** Insert new categoria  */
